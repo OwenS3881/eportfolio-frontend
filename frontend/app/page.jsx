@@ -19,7 +19,7 @@ const HomePage = () => {
       <SkillsSection />
 
       <div className={styles.todo}>
-        <h3>TO DO: Sections to implement</h3>
+        <h3>TO DO: Sections to implement!!!</h3>
         <ul>
           <li>Most Recent Project</li>
           <li>Most Recent Coursework</li>
