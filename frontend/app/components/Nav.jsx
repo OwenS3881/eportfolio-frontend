@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <div>Temp nav 2</div>
+    <div>Temp nav 2.1</div>
     // <header className={styles.container}>
     //   <div className={styles.logoContainer}>
     //     <Link href={"/"}>
