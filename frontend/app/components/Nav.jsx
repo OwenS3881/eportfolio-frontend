@@ -20,7 +20,6 @@ const Nav = () => {
         <Link href={"/research/"}>Research</Link>
         <Link href={"/photos/"}>Photos</Link>
         <Link href={"/journal/"}>Journal</Link>
-        {/*  */}
       </div>
     </header>
   );
