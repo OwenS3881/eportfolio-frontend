@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "@/app/styles/Nav.module.css";
+import styles from "@/app/styles/Navbar.module.css";
 
 import Link from "next/link";
 
