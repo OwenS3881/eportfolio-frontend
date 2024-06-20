@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 13px;
+}
+
+.container hr {
+  border: none;
+  background-color: #000;
+  width: 90%;
+  height: 1px;
+  margin: 15px 0px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo a,
+.contactInfo p {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.contactInfo :last-child {
+  margin-bottom: 0px;
+}
+
+.resumeButton {
+  font-size: 13px !important;
+  padding: 10px !important;
+}
