@@ -1,0 +1,60 @@
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.courseContainer {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.courseSection {
+}
+
+.courseCard {
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  word-wrap: break-word;
+
+  transition: all 0.2s;
+}
+
+.courseCard:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+.courseCard > * {
+  margin-bottom: 2px;
+}
+
+.code {
+  color: var(--color-secondary);
+}
+
+.title {
+  color: var(--color-secondary);
+}
+
+.term {
+  color: var(--color-secondary-light);
+}
+
+.highSchool {
+  margin-left: 20px;
+  color: var(--color-secondary-light);
+}
+
+.credits {
+  color: var(--color-secondary-light);
+}
+
+.category {
+  color: var(--color-secondary-light);
+}
