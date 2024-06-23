@@ -51,7 +51,8 @@ function splitBy(courses, property) {
   return mapToArray(splitMap);
 }
 
-const orderValues = new Map([
+//defines the sorting order for terms
+const termValues = new Map([
   ["High School", 0],
   ["Fall 2024", 1],
   ["Spring 2025", 2],
@@ -71,13 +72,16 @@ const orderValues = new Map([
   ["Fall 2029", 16],
 ]);
 
-//sort courses by term
-function sortByTerm(splitCourses) {
-  return splitCourses;
-}
+//defines the sorting order for category
+const categoryValues = new Map([
+  ["Computer Science", 100],
+  ["Honors", 99],
+  ["Research", 98],
+  ["Elective", 97],
+  ["Gen Ed", 96],
+]);
 
 //Displays my course history
-
 const CourseworkPage = () => {
   const [sortKey, setSortKey] = useState("term");
   const [courses, setCourses] = useState([]);
@@ -94,7 +98,13 @@ const CourseworkPage = () => {
 
   if (sortKey === "term") {
     splitCourses.sort((a, b) => {
-      return orderValues.get(b.category) - orderValues.get(a.category);
+      return termValues.get(b.category) - termValues.get(a.category);
+    });
+  }
+
+  if (sortKey === "category") {
+    splitCourses.sort((a, b) => {
+      return categoryValues.get(b.category) - categoryValues.get(a.category);
     });
   }
 
