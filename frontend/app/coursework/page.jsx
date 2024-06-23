@@ -1,24 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 import styles from "@/app/styles/Courses.module.css";
 
-import Course from "../components/Course";
 import CourseSection from "../components/CourseSection";
 
 //Get courses
-async function fetchCourses() {
-  const res = await fetch(
-    "https://owen-eportfolio-backend.vercel.app/api/courses/",
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
-  );
+// async function fetchCourses() {
+//   const res = await fetch(
+//     "https://owen-eportfolio-backend.vercel.app/api/courses/",
+//     {
+//       next: {
+//         revalidate: 60,
+//       },
+//     }
+//   );
 
-  const courses = await res.json();
-  return courses;
-}
+//   const courses = await res.json();
+//   return courses;
+// }
 
 //convert a map of courses into an array for JSX
 function mapToArray(map) {
@@ -76,14 +78,21 @@ function sortByTerm(splitCourses) {
 
 //Displays my course history
 
-const CourseworkPage = async () => {
-  const courses = await fetchCourses();
+const CourseworkPage = () => {
+  const [sortKey, setSortKey] = useState("term");
+  const [courses, setCourses] = useState([]);
 
-  const key = "category";
+  useEffect(() => {
+    fetch("https://owen-eportfolio-backend.vercel.app/api/courses/")
+      .then((res) => res.json())
+      .then((data) => {
+        setCourses(data);
+      });
+  });
 
-  const splitCourses = splitBy(courses, key);
+  const splitCourses = splitBy(courses, sortKey);
 
-  if (key === "term") {
+  if (sortKey === "term") {
     splitCourses.sort((a, b) => {
       return orderValues.get(b.category) - orderValues.get(a.category);
     });
@@ -92,12 +101,12 @@ const CourseworkPage = async () => {
   return (
     <div className={styles.container}>
       <h1>Coursework</h1>
-      <div>
-        {/* <p>Sort by:</p>
-        <select>
-          <option value="1">Placeholder</option>
-          <option value="2">Use Next Dropdowns</option>
-        </select> */}
+      <div className={styles.sortContainer}>
+        <p>Sort by:</p>
+        <select value={sortKey} onChange={(e) => setSortKey(e.target.value)}>
+          <option value="term">Term</option>
+          <option value="category">Category</option>
+        </select>
       </div>
 
       <div className={styles.courseContainer}>
