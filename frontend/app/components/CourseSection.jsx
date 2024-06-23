@@ -9,9 +9,11 @@ const CourseSection = ({ title, courses }) => {
   return (
     <div className={styles.courseSection}>
       <h1>{title}</h1>
-      {courses.map((course) => (
-        <Course key={course.id} course={course} />
-      ))}
+      <div className={styles.courseSectionContainer}>
+        {courses.map((course) => (
+          <Course key={course.id} course={course} />
+        ))}
+      </div>
     </div>
   );
 };
