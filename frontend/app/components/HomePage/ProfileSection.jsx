@@ -23,6 +23,14 @@ const ProfileSection = () => {
 
       <div className={styles.aboutContainer}>
         <h1>Hi, I'm Owen</h1>
+        <div className={styles.mobileImageContainer}>
+          <Image
+            src={"/ProfilePictureSquare.jpg"}
+            width={1000}
+            height={1000}
+            alt="OwenProfile"
+          />
+        </div>
         <h2>Computer Science Major at the University of Florida.</h2>
         <p>
           Hello, I'm Owen Szymanski and I am an incoming freshman at the
@@ -34,8 +42,10 @@ const ProfileSection = () => {
           about my research, check out my{" "}
           <Link href={"/research/"}>research</Link> page!
         </p>
-        <ContactInfo className={styles.contactContainer} />
-        <ResumeButton />
+        <div className={styles.mobileContact}>
+          <ContactInfo className={styles.contactContainer} />
+          <ResumeButton />
+        </div>
       </div>
     </section>
   );
