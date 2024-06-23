@@ -3,24 +3,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 
+import LoadingPage from "../loading";
+
 import styles from "@/app/styles/Courses.module.css";
 
 import CourseSection from "../components/CourseSection";
-
-//Get courses
-// async function fetchCourses() {
-//   const res = await fetch(
-//     "https://owen-eportfolio-backend.vercel.app/api/courses/",
-//     {
-//       next: {
-//         revalidate: 60,
-//       },
-//     }
-//   );
-
-//   const courses = await res.json();
-//   return courses;
-// }
 
 //convert a map of courses into an array for JSX
 function mapToArray(map) {
@@ -85,14 +72,17 @@ const categoryValues = new Map([
 const CourseworkPage = () => {
   const [sortKey, setSortKey] = useState("term");
   const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch("https://owen-eportfolio-backend.vercel.app/api/courses/")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data);
+        setLoading(false);
       });
-  });
+  }, []);
 
   const splitCourses = splitBy(courses, sortKey);
 
@@ -106,6 +96,10 @@ const CourseworkPage = () => {
     splitCourses.sort((a, b) => {
       return categoryValues.get(b.category) - categoryValues.get(a.category);
     });
+  }
+
+  if (loading) {
+    return <LoadingPage />;
   }
 
   return (

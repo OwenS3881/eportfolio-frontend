@@ -10,6 +10,9 @@
   z-index: 10;
 
   margin-bottom: 10px;
+
+  position: fixed;
+  width: 100%;
 }
 
 .logoContainer {
@@ -55,6 +58,9 @@
   z-index: 10;
 
   margin-bottom: 10px;
+
+  position: fixed;
+  width: 100%;
 }
 
 .mobileContainer a {
@@ -65,7 +71,7 @@
 
 .sidebar {
   position: fixed;
-  top: 110px;
+  top: 89px;
   right: 0px;
   background-color: var(--color-secondary);
   width: 80%;
@@ -109,22 +115,28 @@
 }
 
 .sidebarLinks a:hover,
-.mobileContainer a:hover {
+.mobileContainer a:hover,
+.sidebarLinks a:focus,
+.mobileContainer a:focus {
   color: var(--color-accent);
   text-shadow: none;
+  outline: none;
+}
+
+.mobileContainer a:focus {
+  color: #000;
 }
 
 .hamburger {
   cursor: pointer;
   width: 48px;
-  height: 48px;
+  height: 28px;
   position: relative;
   background: none;
   border: none;
   z-index: 10;
   transition: all 0.25s;
   display: block;
-  margin-top: 5px;
 }
 
 .hamburgerTop,

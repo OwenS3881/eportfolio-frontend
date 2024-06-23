@@ -19,7 +19,7 @@ const Nav = () => {
     const handleResize = () => {
       console.log("verifying");
       setDesktop(window.innerWidth > mobileWidth);
-      if (desktop) setMobileOpen(false);
+      if (desktop) closeMobile();
     };
 
     window.addEventListener("resize", handleResize);
@@ -33,6 +33,17 @@ const Nav = () => {
       window.removeEventListener("load", handleResize);
     };
   }, []);
+
+  const closeMobile = () => {
+    setMobileOpen(false);
+  };
+
+  //Prevents scrolling when mobile menu is open
+  if (mobileOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "scroll";
+  }
 
   return (
     <>
@@ -54,7 +65,7 @@ const Nav = () => {
       ) : (
         <>
           <header className={styles.mobileContainer}>
-            <Link href={"/"}>
+            <Link onClick={closeMobile} href={"/"}>
               <h2>Owen Szymanski</h2>
             </Link>
             <button
@@ -72,11 +83,24 @@ const Nav = () => {
             <h3>Menu</h3>
             <hr />
             <div className={styles.sidebarLinks}>
-              <Link href={"/projects/"}>Projects</Link>
-              <Link href={"/coursework/"}>Coursework</Link>
-              <Link href={"/research/"}>Research</Link>
-              <Link href={"/photos/"}>Photos</Link>
-              <Link href={"/journal/"}>Journal</Link>
+              <Link onClick={closeMobile} href={"/"}>
+                Home
+              </Link>
+              <Link onClick={closeMobile} href={"/projects/"}>
+                Projects
+              </Link>
+              <Link onClick={closeMobile} href={"/coursework/"}>
+                Coursework
+              </Link>
+              <Link onClick={closeMobile} href={"/research/"}>
+                Research
+              </Link>
+              <Link onClick={closeMobile} href={"/photos/"}>
+                Photos
+              </Link>
+              <Link onClick={closeMobile} href={"/journal/"}>
+                Journal
+              </Link>
             </div>
           </div>
         </>
