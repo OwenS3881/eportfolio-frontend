@@ -1,0 +1,103 @@
+.container {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 1500px;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.sortContainer {
+  display: flex;
+  padding: 5px;
+}
+
+.sortContainer p {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.sortContainer select {
+  font-size: 15px;
+}
+
+.courseContainer {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.courseSection {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 2px 2px var(--color-secondary);
+}
+
+.courseSection:nth-child(even) {
+  background-color: var(--color-accent);
+}
+
+.courseSection:nth-child(odd) {
+  background-color: var(--color-secondary-light);
+}
+
+.courseSection h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #000;
+}
+
+.courseSectionContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.courseCard {
+  border: 3px solid var(--color-secondary);
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  word-wrap: break-word;
+
+  transition: all 0.2s;
+}
+
+.courseCard:hover {
+  transform: scale(1.05);
+}
+
+.courseCard > * {
+  margin-bottom: 2px;
+}
+
+.code {
+  color: var(--color-secondary);
+}
+
+.title {
+  color: var(--color-secondary);
+}
+
+.term {
+  color: var(--color-secondary-light);
+}
+
+.highSchool {
+  margin-left: 20px;
+  color: var(--color-secondary-light);
+}
+
+.credits {
+  color: var(--color-secondary-light);
+}
+
+.category {
+  color: var(--color-secondary-light);
+}

@@ -4,6 +4,7 @@ import styles from "@/app/styles/Journal.module.css";
 
 import JournalEntry from "../components/JournalEntry";
 
+//Retrieves the journal entries from the backend
 async function fetchEntries() {
   const res = await fetch(
     "https://owen-eportfolio-backend.vercel.app/api/journal/",
@@ -14,21 +15,23 @@ async function fetchEntries() {
     }
   );
 
+  //sort entries by date
   const entries = await res.json();
   entries.sort((a, b) => new Date(b.date) - new Date(a.date));
   return entries;
 }
 
+//returns date in proper format
 function formatDate(date) {
   const dateObj = new Date(date);
   const formatObj = new Intl.DateTimeFormat("en-us");
   return formatObj.format(dateObj);
 }
 
+//Displays my journal
+
 const JournalPage = async () => {
   const entries = await fetchEntries();
-
-  console.log(entries);
 
   return (
     <div className={styles.container}>

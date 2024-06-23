@@ -29,11 +29,14 @@
   color: #000;
   font-size: 20px;
   transition: all 0.2s;
+
+  text-shadow: 0.25px 0.25px 0px #000;
 }
 
 .linksContainer a:hover,
 .logoContainer a:hover {
   color: var(--color-accent);
+  text-shadow: none;
 }
 
 .linksContainer :last-child {

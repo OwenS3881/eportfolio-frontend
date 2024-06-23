@@ -9,7 +9,7 @@ import SkillsSection from "./components/HomePage/SkillsSection";
 import SkillIcon from "./components/SkillIcon";
 import Tooltip from "./components/Tooltip";
 
-//Home Page
+//Home Page 
 
 const HomePage = () => {
   return (
