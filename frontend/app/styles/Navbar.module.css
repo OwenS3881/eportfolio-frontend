@@ -118,13 +118,9 @@
 .mobileContainer a:hover,
 .sidebarLinks a:focus,
 .mobileContainer a:focus {
-  color: var(--color-accent);
+  color: #000;
   text-shadow: none;
   outline: none;
-}
-
-.mobileContainer a:focus {
-  color: #000;
 }
 
 .hamburger {
