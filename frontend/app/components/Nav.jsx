@@ -28,22 +28,22 @@ const Nav = () => {
     //for initial load
     handleResize();
 
+    //Prevents scrolling when mobile menu is open
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("load", handleResize);
     };
-  }, []);
+  }, [mobileOpen]);
 
   const closeMobile = () => {
     setMobileOpen(false);
   };
-
-  //Prevents scrolling when mobile menu is open
-  if (mobileOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "scroll";
-  }
 
   return (
     <>
