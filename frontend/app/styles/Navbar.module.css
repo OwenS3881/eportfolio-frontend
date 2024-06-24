@@ -115,10 +115,8 @@
 }
 
 .sidebarLinks a:hover,
-.mobileContainer a:hover,
-.sidebarLinks a:focus,
-.mobileContainer a:focus {
-  color: #000;
+.mobileContainer a:hover {
+  color: var(--color-accent);
   text-shadow: none;
   outline: none;
 }

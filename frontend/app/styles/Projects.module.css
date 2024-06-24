@@ -1,0 +1,98 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.topInfo {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.topInfo h1 {
+  margin-bottom: 10px;
+}
+
+.projectCardContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.projectCardContainer hr {
+  border: none;
+  background-color: var(--color-secondary-light);
+  width: 95%;
+  height: 3px;
+  margin: 15px auto;
+}
+
+.projectCard {
+  padding: 20px;
+}
+
+.projectCardHeader {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 10px;
+}
+
+.projectCardHeader h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  color: var(--color-secondary);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  position: relative;
+  margin-left: 20px;
+}
+
+.imgContainer img {
+  object-fit: cover;
+}
+
+.projectCard p {
+  margin-bottom: 10px;
+}
+
+.projectCard h3 {
+  color: var(--color-secondary);
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.skillsContainer > * {
+  margin-right: 10px;
+}
+
+.checkLink {
+  background-color: var(--color-accent);
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+
+  transition: all 0.25s;
+}
+
+.checkLink:hover {
+  background-color: var(--color-secondary-light);
+  color: #000;
+}
