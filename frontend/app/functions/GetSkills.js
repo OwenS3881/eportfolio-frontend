@@ -36,7 +36,7 @@ export function getSkill(skillName) {
         src: "/react-icon.png",
         title: "React JS",
       };
-    case "Django:":
+    case "Django":
       return {
         href: "https://www.djangoproject.com/",
         src: "/django-icon.svg",

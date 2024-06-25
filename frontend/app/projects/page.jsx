@@ -4,7 +4,24 @@ import styles from "@/app/styles/Projects.module.css";
 
 import ProjectCard from "../components/ProjectCard";
 
-const ProjectsPage = () => {
+//Retrieves the projects from the backend
+async function fetchProjects() {
+  const res = await fetch(
+    "https://owen-eportfolio-backend.vercel.app/api/projects/",
+    {
+      next: {
+        revalidate: 1,
+      },
+    }
+  );
+
+  const projects = await res.json();
+  return projects;
+}
+
+const ProjectsPage = async () => {
+  const projects = await fetchProjects();
+
   return (
     <div className={styles.container}>
       <div className={styles.topInfo}>
@@ -17,16 +34,12 @@ const ProjectsPage = () => {
       </div>
 
       <div className={styles.projectCardContainer}>
-        <hr />
-        <ProjectCard />
-        <hr />
-        <ProjectCard />
-        <hr />
-        <ProjectCard />
-        <hr />
-        <ProjectCard />
-        <hr />
-        <ProjectCard />
+        {projects.map((project) => (
+          <>
+            <hr key={project.id} />
+            <ProjectCard key={project.id} project={project} />
+          </>
+        ))}
       </div>
     </div>
   );

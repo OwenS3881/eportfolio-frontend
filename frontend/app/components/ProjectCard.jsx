@@ -9,39 +9,19 @@ import Tooltip from "./Tooltip";
 
 import { getSkill } from "../functions/GetSkills";
 
-const ProjectCard = () => {
-  const skills = [
-    "Next JS",
-    "React JS",
-    "HTML",
-    "Javascript",
-    "Databases/SQL",
-    "Next JS",
-    "React JS",
-    "HTML",
-    "Javascript",
-    "Databases/SQL",
-    "Next JS",
-    "React JS",
-    "HTML",
-    "Javascript",
-    "Databases/SQL",
-  ];
+const ProjectCard = ({ project }) => {
+  const skills = project.skills.split(", ");
 
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectCardHeader}>
-        <h2>PROJECT NAME</h2>
+        <h2>{project.title}</h2>
         <div className={styles.imgContainer}>
-          <Image src={"/landscape.jpg"} fill={true} alt="project-image" />
+          <Image src={project.image} fill={true} alt="project-image" />
         </div>
       </div>
 
-      <p>
-        SHORT DESCRIPTION Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Debitis consequatur inventore quidem nostrum obcaecati cumque ad
-        at fugit hic laboriosam.
-      </p>
+      <p>{project.description}</p>
       <h3>Skills Used:</h3>
       <div className={styles.skillsContainer}>
         {skills.map((skill, i) => {
@@ -59,7 +39,7 @@ const ProjectCard = () => {
           );
         })}
       </div>
-      <Link className={styles.checkLink} href={""}>
+      <Link className={styles.checkLink} href={project.url}>
         Check it out!
       </Link>
     </div>

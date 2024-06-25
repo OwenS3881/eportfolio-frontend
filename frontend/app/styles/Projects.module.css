@@ -96,3 +96,16 @@
   background-color: var(--color-secondary-light);
   color: #000;
 }
+
+@media (max-width: 700px) {
+  .projectCardHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 100px;
+  }
+
+  .projectCardHeader h2 {
+    margin-bottom: 10px;
+  }
+}
