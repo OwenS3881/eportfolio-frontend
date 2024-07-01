@@ -3,6 +3,10 @@
   max-width: 1500px;
 }
 
+.container section {
+  margin-bottom: 30px;
+}
+
 .todo {
   background-color: var(--color-primary);
   padding: 20px 50px;

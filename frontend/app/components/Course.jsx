@@ -3,12 +3,12 @@ import React from "react";
 import styles from "@/app/styles/Courses.module.css";
 
 //Component to display a single course
-const Course = ({ course }) => {
+const Course = ({ course, className, hideTerm }) => {
   return (
-    <div className={styles.courseCard}>
+    <div className={`${styles.courseCard} ${className}`}>
       <h2 className={styles.code}>{course.uf_code}</h2>
       <h3 className={styles.title}>{course.uf_title}</h3>
-      <h3 className={styles.term}>Term: {course.term}</h3>
+      {!hideTerm && <h3 className={styles.term}>Term: {course.term}</h3>}
       {(course.high_school_title !== null ||
         course.high_school_code !== null) && (
         <h4 className={styles.highSchool}>
