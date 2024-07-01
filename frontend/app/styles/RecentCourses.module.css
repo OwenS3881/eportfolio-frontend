@@ -1,0 +1,39 @@
+.container {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.link {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.courseContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courseCard {
+  max-width: 300px;
+}
+
+.courseCard h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.courseCard h3 {
+  font-size: 15px;
+}
+
+.courseCard h4 {
+  font-size: 12px;
+}

@@ -34,7 +34,7 @@
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .projectTitle {
@@ -49,6 +49,7 @@
   color: var(--color-secondary);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .projectCardHeader h5 {
@@ -60,7 +61,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary);
   position: relative;
   margin-left: 20px;
 }
