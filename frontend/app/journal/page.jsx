@@ -23,9 +23,12 @@ async function fetchEntries() {
 
 //returns date in proper format
 function formatDate(date) {
+  console.log(date);
   const dateObj = new Date(date);
-  const formatObj = new Intl.DateTimeFormat("en-us");
-  return formatObj.format(dateObj);
+
+  return `${
+    dateObj.getMonth() + 1
+  }/${dateObj.getDate()}/${dateObj.getFullYear()}`;
 }
 
 //Displays my journal

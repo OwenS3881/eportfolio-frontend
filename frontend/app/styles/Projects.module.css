@@ -1,5 +1,5 @@
 .container {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -37,14 +37,23 @@
   margin-bottom: 10px;
 }
 
-.projectCardHeader h2 {
+.projectTitle {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projectTitle h2 {
   font-size: 40px;
-  text-align: center;
   color: var(--color-secondary);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
+
+.projectCardHeader h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .imgContainer {
