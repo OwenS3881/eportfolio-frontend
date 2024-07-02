@@ -23,7 +23,6 @@ async function fetchEntries() {
 
 //returns date in proper format
 function formatDate(date) {
-  console.log(date);
   const dateObj = new Date(date);
 
   return `${

@@ -6,6 +6,7 @@ import styles from "./styles/Home.module.css";
 import ProfileSection from "./components/HomePage/ProfileSection";
 import SkillsSection from "./components/HomePage/SkillsSection";
 import RecentCourses from "./components/HomePage/RecentCourses";
+import RecentJournal from "./components/HomePage/RecentJournal";
 
 //Home Page
 
@@ -14,7 +15,10 @@ const HomePage = () => {
     <div className={styles.container}>
       <ProfileSection />
       <SkillsSection />
+
       <RecentCourses />
+
+      <RecentJournal />
 
       <section className={styles.todo}>
         <h3>TO DO: Sections to implement!!!</h3>
@@ -27,7 +31,9 @@ const HomePage = () => {
             <s>Most Recent Coursework</s>
           </li>
           <li>Most Recent Research</li>
-          <li>Most Recent Journal Entry</li>
+          <li>
+            <s>Most Recent Journal Entry</s>
+          </li>
         </ul>
       </section>
     </div>

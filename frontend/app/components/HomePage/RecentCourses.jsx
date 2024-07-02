@@ -23,6 +23,7 @@ async function fetchRecentCourses(currentTerm) {
   return filteredCourses;
 }
 
+//section of home page that displays courses from the most recent term
 const RecentCourses = async () => {
   const currentTerm = "Fall 2024";
 
@@ -31,6 +32,10 @@ const RecentCourses = async () => {
   return (
     <section className={styles.container}>
       <h2>{currentTerm} Courses</h2>
+      <p>
+        My complete college course history can be found on my coursework page.
+        Here's a quick glance at what I am up to this semester
+      </p>
       <Link className={styles.link} href={"/coursework/"}>
         View My Full Coursework
       </Link>
