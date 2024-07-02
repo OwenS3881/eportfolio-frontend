@@ -127,7 +127,7 @@
 @media (max-width: 750px) {
   .projectCard {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
   }
 
   .projectCardHeader {
