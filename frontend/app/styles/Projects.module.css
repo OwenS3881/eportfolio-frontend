@@ -60,9 +60,8 @@
   text-align: center;
 }
 
-.projectCardHeader h5 {
+.projectTitle h5 {
   font-size: 15px;
-  margin-bottom: 10px;
 }
 
 .imgContainer {
@@ -127,7 +126,7 @@
 @media (max-width: 750px) {
   .projectCard {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
   }
 
   .projectCardHeader {
