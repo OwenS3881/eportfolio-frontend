@@ -12,7 +12,7 @@
 .imageContainer,
 .mobileImageContainer {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
 }
@@ -44,7 +44,7 @@
 
 .contactContainer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
 }

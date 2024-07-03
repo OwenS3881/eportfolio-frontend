@@ -40,32 +40,35 @@ const ProjectCard = ({ project }) => {
             {startDate} - {endDate}
           </h5>
         </div>
-        <div className={styles.imgContainer}>
-          <Image src={project.image} fill={true} alt="project-image" />
+      </div>
+
+      <div className={styles.imgContainer}>
+        <Image src={project.image} fill={true} alt="project-image" />
+      </div>
+
+      <div className={styles.projectInfo}>
+        <p>{project.description}</p>
+        <h3>Skills Used:</h3>
+        <div className={styles.skillsContainer}>
+          {skills.map((skill, i) => {
+            const skillObj = getSkill(skill);
+
+            return (
+              <Tooltip key={i} text={skill} fontSize={"10px"}>
+                <SkillIcon
+                  href={skillObj.href}
+                  src={skillObj.src}
+                  isSquare={skillObj.isSquare}
+                  size={50}
+                />
+              </Tooltip>
+            );
+          })}
         </div>
+        <Link className={styles.checkLink} href={project.url}>
+          Check it out!
+        </Link>
       </div>
-
-      <p>{project.description}</p>
-      <h3>Skills Used:</h3>
-      <div className={styles.skillsContainer}>
-        {skills.map((skill, i) => {
-          const skillObj = getSkill(skill);
-
-          return (
-            <Tooltip key={i} text={skill} fontSize={"10px"}>
-              <SkillIcon
-                href={skillObj.href}
-                src={skillObj.src}
-                isSquare={skillObj.isSquare}
-                size={50}
-              />
-            </Tooltip>
-          );
-        })}
-      </div>
-      <Link className={styles.checkLink} href={project.url}>
-        Check it out!
-      </Link>
     </div>
   );
 };
