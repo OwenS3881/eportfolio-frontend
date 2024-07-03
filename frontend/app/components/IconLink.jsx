@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "@/app/styles/Projects.module.css";
+import styles from "@/app/styles/ProjectPages.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
