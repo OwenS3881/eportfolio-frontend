@@ -45,6 +45,7 @@ const FruitForcePage = () => {
           />
         </div>
       </div>
+      <h1>ADD LEGAL SECTION</h1>
     </div>
   );
 };
