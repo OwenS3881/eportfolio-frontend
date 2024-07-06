@@ -34,7 +34,7 @@ const RecentCourses = async () => {
       <h2>{currentTerm} Courses</h2>
       <p>
         My complete college course history can be found on my coursework page.
-        Here's a quick glance at what I am up to this semester
+        Here's a quick glance at what I am up to this semester!
       </p>
       <Link className={styles.link} href={"/coursework/"}>
         View My Full Coursework
