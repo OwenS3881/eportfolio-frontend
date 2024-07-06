@@ -3,10 +3,15 @@ import React from "react";
 import styles from "@/app/styles/ProjectPages.module.css";
 
 import IconLink from "@/app/components/IconLink";
+import Link from "next/link";
 
 const FruitForcePage = () => {
   return (
     <div className={styles.container}>
+      <Link className={styles.backButton} href={"/projects/"}>
+        Back
+      </Link>
+
       <div className={styles.header}>
         <h1>Fruit Force</h1>
       </div>
@@ -44,8 +49,13 @@ const FruitForcePage = () => {
             src={"/github-icon.png"}
           />
         </div>
+        <h2>Legal Information</h2>
+
+        <div className={styles.legal}>
+          <Link href={"/projects/fruit-force/privacy/"}>Privacy Policy</Link>
+          <Link href={"/projects/fruit-force/terms/"}>Terms of Service</Link>
+        </div>
       </div>
-      <h1>ADD LEGAL SECTION</h1>
     </div>
   );
 };

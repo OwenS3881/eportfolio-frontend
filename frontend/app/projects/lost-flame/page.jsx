@@ -3,10 +3,14 @@ import React from "react";
 import styles from "@/app/styles/ProjectPages.module.css";
 
 import IconLink from "@/app/components/IconLink";
+import Link from "next/link";
 
 const LostFlamePage = () => {
   return (
     <div className={styles.container}>
+      <Link className={styles.backButton} href={"/projects/"}>
+        Back
+      </Link>
       <div className={styles.header}>
         <h1>Lost Flame</h1>
       </div>
@@ -43,6 +47,13 @@ const LostFlamePage = () => {
             href={"https://github.com/OwenS3881/lost-flame"}
             src={"/github-icon.png"}
           />
+        </div>
+
+        <h2>Legal Information</h2>
+
+        <div className={styles.legal}>
+          <Link href={"/projects/lost-flame/privacy/"}>Privacy Policy</Link>
+          <Link href={"/projects/lost-flame/terms/"}>Terms of Service</Link>
         </div>
       </div>
     </div>

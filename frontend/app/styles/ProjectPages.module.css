@@ -6,10 +6,12 @@
 
 .container h1 {
   font-size: 75px;
+  text-align: center;
 }
 
 .container h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 .container p {
@@ -22,6 +24,27 @@
   width: 95%;
   height: 1px;
   margin: 15px auto;
+}
+
+.backButton {
+  text-decoration: none;
+  background-color: var(--color-accent);
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-flex;
+  border-radius: 10px;
+
+  transition: all 0.2s;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton:hover {
+  background-color: var(--color-secondary-light);
+  color: #000;
 }
 
 .header {
@@ -91,4 +114,39 @@
 
 .iconLink img:hover {
   transform: scale(1.1);
+}
+
+.legal {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.legal a {
+  margin: 10px;
+  text-decoration: none;
+  background-color: var(--color-accent);
+  color: #000;
+  font-size: 30px;
+  padding: 15px;
+  display: inline-flex;
+  border-radius: 10px;
+
+  transition: all 0.2s;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.legal a:hover {
+  background-color: var(--color-secondary-light);
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .backButton {
+    font-size: 12px;
+  }
 }
