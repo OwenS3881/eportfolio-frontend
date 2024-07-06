@@ -1,7 +1,7 @@
 import React from "react";
 
 const ResearchPage = () => {
-  return <div>ResearchPage</div>;
+  return <div className={""}>ResearchPage</div>;
 };
 
 export default ResearchPage;

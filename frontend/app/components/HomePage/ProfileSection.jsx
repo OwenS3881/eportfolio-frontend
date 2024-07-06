@@ -36,11 +36,10 @@ const ProfileSection = () => {
           Hello, I'm Owen Szymanski and I am an incoming freshman at the
           University of Florida. I am really excited to be majoring in Computer
           Science with the goal of becoming a software engineer. In addition to
-          my CS major, I also want to earn a minor in Digital Arts and Sciences
-          and a certificate in AI. I have also been accepted into UF's Honors
-          Program and Undergraduate Research Scholars Program (URSP). For more
-          about my research, check out my{" "}
-          <Link href={"/research/"}>research</Link> page!
+          my CS major, I plan to earn a minor in Digital Arts and Sciences and a
+          certificate in AI. I have also been accepted into UF's Honors Program
+          and Undergraduate Research Scholars Program (URSP). For more about my
+          research, check out my <Link href={"/research/"}>research</Link> page!
         </p>
         <div className={styles.mobileContact}>
           <ContactInfo className={styles.contactContainer} />
