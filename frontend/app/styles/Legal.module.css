@@ -1,0 +1,42 @@
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.backButton {
+  text-decoration: none;
+  background-color: var(--color-accent);
+  color: #000;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: inline-flex;
+  border-radius: 10px;
+
+  transition: all 0.2s;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton:hover {
+  background-color: var(--color-secondary-light);
+  color: #000;
+}
+
+.container > * {
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-size: 25px;
+}
+
+.container strong {
+  font-size: 20px;
+}
+
+.container ul {
+  margin-top: 10px;
+  margin-left: 30px;
+}
