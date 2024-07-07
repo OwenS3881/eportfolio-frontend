@@ -1,0 +1,9 @@
+.rest {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active {
+  opacity: 1;
+}
