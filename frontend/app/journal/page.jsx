@@ -4,6 +4,8 @@ import styles from "@/app/styles/Journal.module.css";
 
 import JournalEntry from "../components/JournalEntry";
 
+import Reveal from "../components/Reveal";
+
 //Retrieves the journal entries from the backend
 async function fetchEntries() {
   const res = await fetch(
@@ -41,12 +43,14 @@ const JournalPage = async () => {
       <div className={styles.entryContainer}>
         {entries.map((entry, i) => (
           <>
-            <JournalEntry
-              key={entry.id}
-              title={entry.title}
-              date={formatDate(entry.date)}
-              content={entry.content}
-            />
+            <Reveal key={entry.id}>
+              <JournalEntry
+                key={entry.id}
+                title={entry.title}
+                date={formatDate(entry.date)}
+                content={entry.content}
+              />
+            </Reveal>
             {i < entries.length - 1 ? <hr key={entry.id} /> : ""}
           </>
         ))}

@@ -4,6 +4,8 @@ import styles from "@/app/styles/Projects.module.css";
 
 import ProjectCard from "../components/ProjectCard";
 
+import Reveal from "../components/Reveal";
+
 //Retrieves the projects from the backend
 async function fetchProjects() {
   const res = await fetch(
@@ -37,7 +39,9 @@ const ProjectsPage = async () => {
         {projects.map((project) => (
           <>
             <hr key={project.id} />
-            <ProjectCard key={project.id} project={project} />
+            <Reveal key={project.id}>
+              <ProjectCard key={project.id} project={project} />
+            </Reveal>
           </>
         ))}
       </div>
