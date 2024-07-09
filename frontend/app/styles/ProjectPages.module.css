@@ -145,8 +145,35 @@
   color: #000;
 }
 
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 1000px;
+  width: 100%;
+  column-gap: 50px;
+}
+
+.pictures > div {
+  position: relative;
+}
+
+.pictures img {
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .pictures {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .backButton {
     font-size: 12px;
+  }
+
+  .container h1 {
+    font-size: 60px;
   }
 }
