@@ -1,0 +1,74 @@
+.galleryButton {
+  background-color: #000;
+  padding: 0;
+  border: none;
+  box-shadow: 0px 0px 10px 2px var(--color-secondary-light);
+  height: auto;
+}
+
+.galleryButton img {
+  opacity: 1;
+  transition: opacity 0.25s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.galleryButton:hover img {
+  opacity: 0.4;
+}
+
+.galleryButton img {
+  object-fit: cover;
+}
+
+.zoomed {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoomedImage {
+  background-color: var(--color-secondary-light);
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: 11;
+
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.zoomedImage img {
+  object-fit: contain;
+  padding: 50px;
+}
+
+.zoomedImage button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 12;
+  transition: all 0.1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 3px;
+  border-radius: 10%;
+
+  background: none;
+  border: none;
+  font-size: 25px;
+}
+
+.zoomedImage button:hover {
+  background-color: var(--color-accent);
+}
