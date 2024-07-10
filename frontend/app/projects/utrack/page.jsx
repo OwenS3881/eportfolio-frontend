@@ -4,7 +4,6 @@ import styles from "@/app/styles/ProjectPages.module.css";
 
 import IconLink from "@/app/components/IconLink";
 import Link from "next/link";
-import Image from "next/image";
 
 const UtrackPage = () => {
   return (
