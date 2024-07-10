@@ -146,19 +146,21 @@
 }
 
 .pictures {
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 1000px;
   width: 100%;
-  column-gap: 50px;
+  gap: 25px;
 }
 
 .pictures > div {
   position: relative;
+  height: 300px;
 }
 
 .pictures img {
-  object-fit: contain;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px 2px var(--color-secondary-light);
 }
 
 @media (max-width: 900px) {
