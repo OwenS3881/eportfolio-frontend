@@ -37,8 +37,9 @@ const UtrackPage = () => {
           />
           <IconLink
             platform={"Web Portal"}
-            href={""}
+            href={"/projects/utrack/demo/"}
             src={"/utrack-logo.png"}
+            external={true}
           />
         </div>
         <h2>View the Source Code</h2>
