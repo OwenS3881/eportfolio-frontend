@@ -74,6 +74,7 @@
   background: none;
   border: none;
   font-size: 25px;
+  color: #000;
 }
 
 .zoomedImage button:hover {
