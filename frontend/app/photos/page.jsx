@@ -1,7 +1,47 @@
 import React from "react";
 
-const PhotosPage = () => {
-  return <div>PhotosPage</div>;
+import styles from "@/app/styles/Photos.module.css";
+
+import Image from "next/image";
+
+import { promises as fs } from "fs";
+import path from "path";
+
+import GalleryPicture from "../components/GalleryPicture";
+
+const captions = new Map([
+  [
+    "graduation.JPG",
+    "Me giving the Salutatorian speech at my High School graduation.",
+  ],
+  ["uf-honors.jpg", "UF Honors Class of 2028!"],
+  [
+    "ursp.png",
+    "UF's Center For Undergraduate Research which I will be actively involved in as part of the URSP.",
+  ],
+]);
+
+const PhotosPage = async () => {
+  //get all images from the "gallery" folder
+  const imageDirectory = path.join(process.cwd(), "/public/gallery");
+  const imageFilenames = await fs.readdir(imageDirectory);
+
+  return (
+    <div className={styles.container}>
+      <h1>Photo Gallery</h1>
+      <div className={styles.gallery}>
+        {imageFilenames.map((srcFile, i) => (
+          <GalleryPicture
+            key={i}
+            src={`/gallery/${srcFile}`}
+            width={250}
+            height={250}
+            caption={captions.get(srcFile)}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default PhotosPage;
