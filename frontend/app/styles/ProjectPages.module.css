@@ -7,6 +7,7 @@
 .container h1 {
   font-size: 75px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .container h2 {
@@ -40,6 +41,10 @@
 
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+  top: 90px;
+  left: 20px;
 }
 
 .backButton:hover {
