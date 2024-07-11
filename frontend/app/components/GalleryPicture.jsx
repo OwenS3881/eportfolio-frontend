@@ -9,7 +9,7 @@ import Image from "next/image";
 
 import { FaWindowClose } from "react-icons/fa";
 
-const GalleryPicture = ({ src, width, height, alt }) => {
+const GalleryPicture = ({ src, width, height, alt, caption }) => {
   const [clicked, setClicked] = useState(false);
 
   const openImage = (e) => {
@@ -34,6 +34,7 @@ const GalleryPicture = ({ src, width, height, alt }) => {
               <FaWindowClose />
             </button>
             <Image src={src} fill={true} alt={alt} />
+            {caption && <h3>{caption}</h3>}
           </div>
         </div>
       )}

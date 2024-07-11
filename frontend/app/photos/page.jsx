@@ -9,6 +9,18 @@ import path from "path";
 
 import GalleryPicture from "../components/GalleryPicture";
 
+const captions = new Map([
+  [
+    "graduation.JPG",
+    "Me giving the Salutatorian speech at my High School graduation.",
+  ],
+  ["uf-honors.jpg", "UF Honors Class of 2028!"],
+  [
+    "ursp.png",
+    "UF's Center For Undergraduate Research which I will be actively involved in as part of the URSP.",
+  ],
+]);
+
 const PhotosPage = async () => {
   //get all images from the "gallery" folder
   const imageDirectory = path.join(process.cwd(), "/public/gallery");
@@ -24,6 +36,7 @@ const PhotosPage = async () => {
             src={`/gallery/${srcFile}`}
             width={250}
             height={250}
+            caption={captions.get(srcFile)}
           />
         ))}
       </div>

@@ -44,6 +44,13 @@
   z-index: 11;
 
   box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin: 0 10px;
 }
 
 .zoomedImage img {
@@ -71,4 +78,13 @@
 
 .zoomedImage button:hover {
   background-color: var(--color-accent);
+}
+
+.zoomedImage h3 {
+  height: 40px;
+  background-color: var(--color-accent);
+  padding: 5px;
+  font-size: 12px;
+  overflow: auto;
+  width: 100%;
 }
