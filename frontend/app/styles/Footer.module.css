@@ -37,6 +37,15 @@
   margin-bottom: 0px;
 }
 
+.socialContainer {
+  margin-top: 10px;
+  display: flex;
+}
+
+.socialContainer > * {
+  margin: 0 10px;
+}
+
 .resumeButton {
   font-size: 13px !important;
   padding: 10px !important;
