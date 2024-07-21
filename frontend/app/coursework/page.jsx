@@ -40,7 +40,7 @@ function splitBy(courses, property) {
 
 //defines the sorting order for terms
 const termValues = new Map([
-  ["High School", 0],
+  ["College Credit Earned in High School", 0],
   ["Fall 2024", 1],
   ["Spring 2025", 2],
   ["Summer 2025", 3],
