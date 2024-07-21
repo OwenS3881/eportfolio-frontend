@@ -26,6 +26,16 @@ module.exports = {
         destination: "/projects/lost-flame/terms",
         permanent: true,
       },
+      {
+        source: "/support",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/legal",
+        destination: "/projects",
+        permanent: true,
+      },
     ];
   },
 };
