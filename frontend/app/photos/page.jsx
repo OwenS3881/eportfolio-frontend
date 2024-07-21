@@ -19,6 +19,11 @@ const captions = new Map([
     "ursp.png",
     "UF's Center For Undergraduate Research which I will be actively involved in as part of the URSP.",
   ],
+  ["honors-me.jpg", "Me standing outside the Honors Village on a tour of UF."],
+  [
+    "young-me.jpg",
+    "Me standing outside the Computer Science building when I was a kid.",
+  ],
 ]);
 
 const PhotosPage = async () => {
