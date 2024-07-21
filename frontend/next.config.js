@@ -36,6 +36,11 @@ module.exports = {
         destination: "/projects",
         permanent: true,
       },
+      {
+        source: "/utrack",
+        destination: "/projects/utrack/demo",
+        permanent: true,
+      },
     ];
   },
 };
