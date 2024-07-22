@@ -4,6 +4,10 @@ import Link from "next/link";
 
 import styles from "@/app/styles/Legal.module.css";
 
+export const metadata = {
+  title: "Privacy Policy | Lost Flame",
+};
+
 const LostFlamePrivacy = () => {
   return (
     <div className={styles.container}>

@@ -2,6 +2,10 @@ import React from "react";
 
 import styles from "@/app/styles/Research.module.css";
 
+export const metadata = {
+  title: "Research",
+};
+
 const ResearchPage = () => {
   return (
     <div className={styles.container}>

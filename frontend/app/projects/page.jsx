@@ -6,6 +6,10 @@ import ProjectCard from "../components/ProjectCard";
 
 import Reveal from "../components/Reveal";
 
+export const metadata = {
+  title: "Projects",
+};
+
 //Retrieves the projects from the backend
 async function fetchProjects() {
   const res = await fetch(

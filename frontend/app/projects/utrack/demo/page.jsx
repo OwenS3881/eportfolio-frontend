@@ -5,6 +5,10 @@ import styles from "@/app/styles/ProjectPages.module.css";
 import Link from "next/link";
 import UTrackUnity from "@/app/components/UTrackUnity";
 
+export const metadata = {
+  title: "Demo | UTrack",
+};
+
 const UTrackDemo = () => {
   return (
     <div className={styles.container}>

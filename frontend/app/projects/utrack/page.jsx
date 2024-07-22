@@ -5,6 +5,10 @@ import styles from "@/app/styles/ProjectPages.module.css";
 import IconLink from "@/app/components/IconLink";
 import Link from "next/link";
 
+export const metadata = {
+  title: "UTrack",
+};
+
 const UtrackPage = () => {
   return (
     <div className={styles.container}>

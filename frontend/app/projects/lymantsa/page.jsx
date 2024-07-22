@@ -6,6 +6,10 @@ import IconLink from "@/app/components/IconLink";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "LymanTSA.org",
+};
+
 const LymanTSAPage = () => {
   return (
     <div className={styles.container}>
