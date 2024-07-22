@@ -9,6 +9,10 @@ import path from "path";
 
 import GalleryPicture from "../components/GalleryPicture";
 
+export const metadata = {
+  title: "Photos",
+};
+
 const captions = new Map([
   [
     "graduation.JPG",

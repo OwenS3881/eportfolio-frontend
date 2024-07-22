@@ -4,6 +4,10 @@ import Link from "next/link";
 
 import styles from "@/app/styles/Legal.module.css";
 
+export const metadata = {
+  title: "Privacy Policy | Fruit Force",
+};
+
 const FruitForcePrivacy = () => {
   return (
     <div className={styles.container}>

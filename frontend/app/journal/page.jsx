@@ -6,6 +6,10 @@ import JournalEntry from "../components/JournalEntry";
 
 import Reveal from "../components/Reveal";
 
+export const metadata = {
+  title: "Journal",
+};
+
 //Retrieves the journal entries from the backend
 async function fetchEntries() {
   const res = await fetch(
