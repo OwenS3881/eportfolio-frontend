@@ -15,7 +15,7 @@ const Footer = () => {
       <ContactInfo className={styles.contactInfo} />
       <div className={styles.socialContainer}>
         <SocialIcon
-          href={"https://www.linkedin.com/in/owen-szymanski-74b9822bb/"}
+          href={"https://www.linkedin.com/in/oszymanski"}
           src={"/linkedin-logo.png"}
           size={25}
         />
