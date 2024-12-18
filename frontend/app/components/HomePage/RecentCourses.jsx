@@ -25,7 +25,7 @@ async function fetchRecentCourses(currentTerm) {
 
 //section of home page that displays courses from the most recent term
 const RecentCourses = async () => {
-  const currentTerm = "Fall 2024";
+  const currentTerm = "Spring 2025";
 
   const courses = await fetchRecentCourses(currentTerm);
 
