@@ -10,44 +10,50 @@ import ResumeButton from "../ResumeButton";
 //Contains basic information about me to be displayed at the top of the home page
 
 const ProfileSection = () => {
-  return (
-    <section className={styles.container}>
-      <div className={styles.imageContainer}>
-        <Image
-          src={"/ProfilePictureSquare.jpg"}
-          width={1000}
-          height={1000}
-          alt="OwenProfile"
-        />
-      </div>
+    return (
+        <section className={styles.container}>
+            <div className={styles.imageContainer}>
+                <Image
+                    src={"/ProfilePictureSquare.jpg"}
+                    width={1000}
+                    height={1000}
+                    alt="OwenProfile"
+                />
+            </div>
 
-      <div className={styles.aboutContainer}>
-        <h1>Hi, I'm Owen</h1>
-        <div className={styles.mobileImageContainer}>
-          <Image
-            src={"/ProfilePictureSquare.jpg"}
-            width={1000}
-            height={1000}
-            alt="OwenProfile"
-          />
-        </div>
-        <h2>Computer Science Major at the University of Florida.</h2>
-        <p>
-          Hello, I'm Owen Szymanski and I am an incoming freshman at the
-          University of Florida. I am really excited to be majoring in Computer
-          Science with the goal of becoming a software engineer. In addition to
-          my CS major, I plan to earn a minor in Digital Arts and Sciences and a
-          certificate in AI. I have also been accepted into UF's Honors Program
-          and Undergraduate Research Scholars Program (URSP). For more about my
-          research, check out my <Link href={"/research/"}>research</Link> page!
-        </p>
-        <div className={styles.mobileContact}>
-          <ContactInfo className={styles.contactContainer} />
-          <ResumeButton />
-        </div>
-      </div>
-    </section>
-  );
+            <div className={styles.aboutContainer}>
+                <h1>Hi, I'm Owen</h1>
+                <div className={styles.mobileImageContainer}>
+                    <Image
+                        src={"/ProfilePictureSquare.jpg"}
+                        width={1000}
+                        height={1000}
+                        alt="OwenProfile"
+                    />
+                </div>
+                <h2>Computer Science Major at the University of Florida.</h2>
+                <h3 className={styles.warningBanner}>
+                    NOTE: I am currently performing a major overhaul of this
+                    ePortfolio, check back later for the finished product!
+                </h3>
+                <p>
+                    Hello, I'm Owen Szymanski and I am a second year student at
+                    the University of Florida. I am really excited to be
+                    majoring in Computer Science with the goal of becoming a
+                    software engineer. In addition to my CS major, I plan to
+                    earn a minor in Digital Arts and Sciences and a certificate
+                    in AI. I have also been accepted into UF's Honors Program
+                    and Undergraduate Research Scholars Program (URSP). For more
+                    about my research, check out my{" "}
+                    <Link href={"/research/"}>research</Link> page!
+                </p>
+                <div className={styles.mobileContact}>
+                    <ContactInfo className={styles.contactContainer} />
+                    <ResumeButton />
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default ProfileSection;
