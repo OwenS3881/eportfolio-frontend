@@ -67,11 +67,6 @@
     border-right: none;
 }
 
-.warningBanner {
-    color: #f00 !important;
-    font-size: 30px;
-}
-
 @media (max-width: 950px) {
     .mobileImageContainer {
         display: flex;

@@ -32,17 +32,12 @@ const ProfileSection = () => {
                     />
                 </div>
                 <h2>Computer Science Major at the University of Florida.</h2>
-                <h3 className={styles.warningBanner}>
-                    NOTE: I am currently performing a major overhaul of this
-                    ePortfolio, check back later for the finished product!
-                </h3>
                 <p>
                     Hello, I'm Owen Szymanski and I am a second year student at
-                    the University of Florida. I am really excited to be
-                    majoring in Computer Science with the goal of becoming a
-                    software engineer. In addition to my CS major, I plan to
-                    earn a minor in Digital Arts and Sciences and a certificate
-                    in AI. I have also been accepted into UF's Honors Program
+                    the University of Florida. I am a very passionbate Computer
+                    Science student and I have the goal of becoming a software
+                    engineer. In addition to my CS major, I plan to earn a minor
+                    in Business Administration. I am also in UF's Honors Program
                     and Undergraduate Research Scholars Program (URSP). For more
                     about my research, check out my{" "}
                     <Link href={"/research/"}>research</Link> page!

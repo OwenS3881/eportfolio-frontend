@@ -63,9 +63,8 @@ const InternationalPage = () => {
                             program. They were incredibly grateful to have a
                             team of interns willing to work with them and were
                             very eager to meet us. In our first meeting, they
-                            gave told us all of their ideas for what they wanted
-                            in their permaculture app to help manage their
-                            program.
+                            told us all of their ideas for what they wanted in
+                            their permaculture app to help manage their program.
                         </p>
                     }
                 />
