@@ -31,7 +31,7 @@ const InternationalPage = () => {
                             community organizations in the work that they are
                             doing. Under the guidance of our amazing professor{" "}
                             <Link
-                                href="https://www.cise.ufl.edu/thomas-sanethia/"
+                                href="https://www.eng.ufl.edu/about/contact/college-directory/name/sanethia-thomas/"
                                 target="_blank"
                             >
                                 Dr. Sanethia Thomas
@@ -106,8 +106,30 @@ const InternationalPage = () => {
                         </p>
                     }
                 />
+
                 <PictureAndCaption
                     text={<p>Make this section about the final presentation</p>}
+                />
+                <PictureAndCaption
+                    imgSrc={"/abroad-pics/penguin-selfie.jpg"}
+                    text={
+                        <p>
+                            In between our work on the project, we had plenty of
+                            opportunities to explore South Africa. We got to see
+                            some of the beautiful scenery of Cape Town including
+                            Table Mountain, Lion's Head, Chapman's Peak, and
+                            Cape Point. We saw countless wildlife including
+                            penguins, elephants, hippos, antelope, lions, and
+                            many more. We got to learn about the cultural
+                            history of South Africa through important
+                            experiences such as visting the Slave Lodge,
+                            speaking with Lionel Davis, visting the township of
+                            Khayelitsha, and seeing the District Six Museum. On
+                            our free days, we planned some exciting adventures
+                            including paragliding off of Signal Hill, sand
+                            boarding on the dunes, and riding ATVs.
+                        </p>
+                    }
                 />
                 <PictureAndCaption
                     imgSrc={"/abroad-pics/paragliding.jpg"}
@@ -126,7 +148,10 @@ const InternationalPage = () => {
                             experiences that I have gained and incorporate it
                             into everything I do from my programming, to my
                             interactions with people, to my persepctive on the
-                            world.
+                            world. I would also like to thank the following
+                            people and organizations for making this program
+                            possible: Dr. Sanethia Thomas, Ping Neo, Naomi
+                            Harrell, EDU Africa, and Safe Cities.
                         </p>
                     }
                 />

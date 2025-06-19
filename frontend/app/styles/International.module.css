@@ -15,6 +15,8 @@
     font-weight: normal;
     font-size: 25px;
     margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .captionsContainer > section:nth-child(odd) .textContainer {
