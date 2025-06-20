@@ -1,0 +1,92 @@
+.container {
+    margin: 20px auto;
+    margin-bottom: 0px;
+    max-width: 1500px;
+}
+
+.titleText {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.subTitleText {
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.quoteContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.quoteText {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.quoteNameText {
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.captionsContainer > section:nth-child(odd) .textContainer {
+    order: 2;
+}
+
+.sectionContainer:first-child .textContainer {
+    padding-top: 0;
+}
+
+.sectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 300px;
+}
+
+.textContainer {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.imageContainer img {
+    object-fit: cover;
+}
+
+@media (max-width: 950px) {
+    .sectionContainer:first-child .textContainer {
+        padding: 20px;
+    }
+
+    .captionsContainer > section .imageContainer {
+        order: 1;
+    }
+    .captionsContainer > section .textContainer {
+        order: 2;
+    }
+
+    .sectionContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        min-height: 600px;
+    }
+}
