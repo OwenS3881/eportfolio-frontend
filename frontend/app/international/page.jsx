@@ -155,7 +155,7 @@ const InternationalPage = () => {
                     }
                 />
                 <PictureAndCaption
-                    imgSrc={"/abroad-pics/paragliding.jpg"}
+                    imgSrc={"/abroad-pics/paragliding.jpeg"}
                     text={
                         <p>
                             Overall, this program has been one of the most

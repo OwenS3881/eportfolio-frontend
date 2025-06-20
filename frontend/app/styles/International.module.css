@@ -89,4 +89,19 @@
         grid-template-rows: repeat(2, 1fr);
         min-height: 600px;
     }
+
+    .quoteContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .quoteText {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
 }
