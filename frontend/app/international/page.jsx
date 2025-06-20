@@ -17,6 +17,13 @@ const InternationalPage = () => {
                 UF in Cape Town: Software Engineering and UX Design Internship
                 Abroad
             </h2>
+            <div className={styles.quoteContainer}>
+                <h3 className={styles.quoteText}>
+                    "Education is the most powerful weapon which you can use to
+                    change the world."
+                </h3>
+                <h3 className={styles.quoteNameText}>&ndash; Nelson Mandela</h3>
+            </div>
 
             <div className={styles.captionsContainer}>
                 <PictureAndCaption
@@ -56,7 +63,7 @@ const InternationalPage = () => {
                             </Link>{" "}
                             is a community driven organization with a variety of
                             programs designed to uplift the members of their
-                            community through activites such as skills
+                            community through activities such as skills
                             development, leadership workshops, and empowering
                             women in the community. For my internship I was
                             tasked to work with Safe Cities' permaculture
@@ -94,7 +101,7 @@ const InternationalPage = () => {
                         <p>
                             Once planning was over, we were able to start the
                             development process. The team and I worked
-                            dilligently throughout the program, whether it was
+                            diligently throughout the program, whether it was
                             when we went into the office or during our down time
                             in between our various cultural experiences and
                             activities, we maximized the limited development
@@ -108,7 +115,23 @@ const InternationalPage = () => {
                 />
 
                 <PictureAndCaption
-                    text={<p>Make this section about the final presentation</p>}
+                    imgSrc={"/abroad-pics/final-presentation.jpeg"}
+                    text={
+                        <p>
+                            After 5 weeks of hard work on the project, we were
+                            finally ready to present it to the client. During
+                            the presentation we did a full live demo of the app
+                            and explained how every part of it worked. Safe
+                            Cities was ecstatic. They had been looking for a
+                            solution like this for years and they were so
+                            grateful to have a product like ours. It was
+                            incredibly rewarding to see their reactions and has
+                            made all of the long hours spent on the project
+                            completely worth it. I had an amazing time working
+                            with Safe Cities and I'm so excited to see how our
+                            app is able to impact their work for years to come.
+                        </p>
+                    }
                 />
                 <PictureAndCaption
                     imgSrc={"/abroad-pics/penguin-selfie.jpg"}
