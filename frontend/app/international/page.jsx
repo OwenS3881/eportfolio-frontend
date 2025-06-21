@@ -171,13 +171,21 @@ const InternationalPage = () => {
                             experiences that I have gained and incorporate it
                             into everything I do from my programming, to my
                             interactions with people, to my persepctive on the
-                            world. I would also like to thank the following
-                            people and organizations for making this program
-                            possible: Dr. Sanethia Thomas, Ping Neo, Naomi
-                            Harrell, EDU Africa, and Safe Cities.
+                            world.
                         </p>
                     }
                 />
+            </div>
+
+            <div className={styles.acknowledgementSection}>
+                <h2 className={styles.acknowledgementTitle}>
+                    Acknowledgements
+                </h2>
+                <p className={styles.acknowledgementText}>
+                    I would like to thank the following people and organizations
+                    for making this program possible: Dr. Sanethia Thomas, Ping
+                    Neo, Naomi Harrell, EDU Africa, and Safe Cities.
+                </p>
             </div>
         </div>
     );
