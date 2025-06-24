@@ -170,7 +170,7 @@ const InternationalPage = () => {
                             Going forward, I plan to take the new knowledge and
                             experiences that I have gained and incorporate it
                             into everything I do from my programming, to my
-                            interactions with people, to my persepctive on the
+                            interactions with people, to my perspective on the
                             world.
                         </p>
                     }
