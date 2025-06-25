@@ -14,25 +14,25 @@ import RecentJournal from "./components/HomePage/RecentJournal";
 //Home Page
 
 const HomePage = () => {
-  return (
-    <div className={styles.container}>
-      <Reveal>
-        <ProfileSection />
-      </Reveal>
-      <Reveal>
-        <SkillsSection />
-      </Reveal>
-      <Reveal>
-        <ProjectsSection />
-      </Reveal>
-      <Reveal>
-        <RecentCourses />
-      </Reveal>
-      <Reveal>
+    return (
+        <div className={styles.container}>
+            <Reveal>
+                <ProfileSection />
+            </Reveal>
+            <Reveal>
+                <SkillsSection />
+            </Reveal>
+            <Reveal>
+                <ProjectsSection />
+            </Reveal>
+            <Reveal>
+                <RecentCourses />
+            </Reveal>
+            {/* <Reveal>
         <RecentJournal />
-      </Reveal>
-    </div>
-  );
+      </Reveal> */}
+        </div>
+    );
 };
 
 export default HomePage;
