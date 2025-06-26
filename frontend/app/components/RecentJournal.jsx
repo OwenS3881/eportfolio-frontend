@@ -36,9 +36,10 @@ const RecentJournal = async () => {
         <section className={styles.container}>
             <h2 className={styles.sectionTitle}>My Research Journal</h2>
             <p className={styles.description}>
-                Throughout my time in UF's URSP, I will be keeping a journal
-                documenting my experiences in research and at UF as a whole.
-                Here is a sample of my most recent entry!
+                Throughout my time in UF's Undergraduate Research Scholars
+                Program (URSP), I will be keeping a journal documenting my
+                experiences in research and at UF as a whole. Here is a sample
+                of my most recent entry!
             </p>
             <Link className={styles.mainLink} href={"/research/journal/"}>
                 View My Full Journal

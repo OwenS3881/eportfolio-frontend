@@ -5,6 +5,7 @@ import styles from "@/app/styles/Research.module.css";
 import RecentJournal from "@/app/components/RecentJournal";
 import Reveal from "../components/Reveal";
 import ResearchCard from "@/app/components/ResearchCard";
+import Link from "next/link";
 
 export const metadata = {
     title: "Research",
@@ -31,6 +32,21 @@ const ResearchPage = async () => {
     return (
         <div className={styles.container}>
             <h1>Research</h1>
+            <p>
+                As a member of{" "}
+                <Link
+                    href={
+                        "https://cur.aa.ufl.edu/programs-university-research-scholars-program/"
+                    }
+                    target="_blank"
+                >
+                    UF's Undergraduate Research Scholars Program (URSP)
+                </Link>
+                , I have and will continue to have the opportunity to
+                participate in many meaningful research projects across
+                disciplines at UF. Below are some of the projects I have worked
+                on so far.
+            </p>
             <div className={styles.researchCardsContainer}>
                 {researchList.map((researchExperience) => (
                     <>
