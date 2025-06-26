@@ -54,3 +54,9 @@
     font-size: 15px;
     white-space: pre-wrap;
 }
+
+@media (max-width: 600px) {
+    .mainLink {
+        margin-bottom: 30px;
+    }
+}
