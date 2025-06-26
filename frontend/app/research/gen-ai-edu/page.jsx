@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "@/app/styles/VirutalLearningLab.module.css";
+import styles from "@/app/styles/VirtualLearningLab.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/app/components/Reveal";
