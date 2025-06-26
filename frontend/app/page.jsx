@@ -9,7 +9,6 @@ import ProfileSection from "./components/HomePage/ProfileSection";
 import SkillsSection from "./components/HomePage/SkillsSection";
 import ProjectsSection from "./components/HomePage/ProjectsSection";
 import RecentCourses from "./components/HomePage/RecentCourses";
-import RecentJournal from "./components/HomePage/RecentJournal";
 
 //Home Page
 
@@ -28,9 +27,6 @@ const HomePage = () => {
             <Reveal>
                 <RecentCourses />
             </Reveal>
-            {/* <Reveal>
-        <RecentJournal />
-      </Reveal> */}
         </div>
     );
 };
