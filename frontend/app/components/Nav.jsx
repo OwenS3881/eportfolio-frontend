@@ -56,10 +56,10 @@ const Nav = () => {
                     </div>
                     <div className={styles.linksContainer}>
                         <Link href={"/projects/"}>Projects</Link>
-                        <Link href={"/coursework/"}>Coursework</Link>
                         <Link href={"/research/"}>Research</Link>
-                        <Link href={"/photos/"}>Photos</Link>
                         <Link href={"/international/"}>Study Abroad</Link>
+                        <Link href={"/photos/"}>Photos</Link>
+                        <Link href={"/coursework/"}>Coursework</Link>
                     </div>
                 </header>
             ) : (
@@ -93,20 +93,20 @@ const Nav = () => {
                             <Link onClick={closeMobile} href={"/projects/"}>
                                 Projects
                             </Link>
-                            <Link onClick={closeMobile} href={"/coursework/"}>
-                                Coursework
-                            </Link>
                             <Link onClick={closeMobile} href={"/research/"}>
                                 Research
-                            </Link>
-                            <Link onClick={closeMobile} href={"/photos/"}>
-                                Photos
                             </Link>
                             <Link
                                 onClick={closeMobile}
                                 href={"/international/"}
                             >
                                 Study Abroad
+                            </Link>
+                            <Link onClick={closeMobile} href={"/photos/"}>
+                                Photos
+                            </Link>
+                            <Link onClick={closeMobile} href={"/coursework/"}>
+                                Coursework
                             </Link>
                         </div>
                     </div>

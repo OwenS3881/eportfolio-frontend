@@ -67,7 +67,7 @@
     border-right: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 985px) {
     .mobileImageContainer {
         display: flex;
     }
