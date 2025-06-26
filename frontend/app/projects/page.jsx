@@ -7,50 +7,50 @@ import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
 
 export const metadata = {
-  title: "Projects",
+    title: "Projects",
 };
 
 //Retrieves the projects from the backend
 async function fetchProjects() {
-  const res = await fetch(
-    "https://owen-eportfolio-backend.vercel.app/api/projects/",
-    {
-      next: {
-        revalidate: 1,
-      },
-    }
-  );
+    const res = await fetch(
+        "https://owen-eportfolio-backend.vercel.app/api/projects/",
+        {
+            next: {
+                revalidate: 1,
+            },
+        }
+    );
 
-  const projects = await res.json();
-  return projects;
+    const projects = await res.json();
+    return projects;
 }
 
 const ProjectsPage = async () => {
-  const projects = await fetchProjects();
+    const projects = await fetchProjects();
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.topInfo}>
-        <h1>My Projects</h1>
-        <p>
-          In addition to my Computer Science coursework, I love to develop
-          projects in my spare time. Here you can checkout all of the projects
-          that I have created!
-        </p>
-      </div>
+    return (
+        <div className={styles.container}>
+            <div className={styles.topInfo}>
+                <h1>My Projects</h1>
+                <p>
+                    In addition to my Computer Science coursework, I love to
+                    develop projects in my spare time. Here you can check out
+                    all of the projects that I have created!
+                </p>
+            </div>
 
-      <div className={styles.projectCardContainer}>
-        {projects.map((project) => (
-          <>
-            <hr key={project.id} />
-            <Reveal key={project.id}>
-              <ProjectCard key={project.id} project={project} />
-            </Reveal>
-          </>
-        ))}
-      </div>
-    </div>
-  );
+            <div className={styles.projectCardContainer}>
+                {projects.map((project) => (
+                    <>
+                        <hr key={project.id} />
+                        <Reveal key={project.id}>
+                            <ProjectCard key={project.id} project={project} />
+                        </Reveal>
+                    </>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default ProjectsPage;

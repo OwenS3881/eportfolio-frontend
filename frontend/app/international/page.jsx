@@ -31,7 +31,7 @@ const InternationalPage = () => {
                     text={
                         <p>
                             During the Summer of 2025, I had the amazing
-                            opportunity to particpate in the UF in Cape Town:
+                            opportunity to participate in the UF in Cape Town:
                             Software Engineering and UX Design Internship Abroad
                             program. The program lasted 5 weeks and had us
                             focusing on developing applications to assist local
@@ -60,9 +60,9 @@ const InternationalPage = () => {
                                 target="_blank"
                             >
                                 Safe Cities
-                            </Link>{" "}
-                            is a community driven organization with a variety of
-                            programs designed to uplift the members of their
+                            </Link>
+                            , is a community driven organization with a variety
+                            of programs designed to uplift the members of their
                             community through activities such as skills
                             development, leadership workshops, and empowering
                             women in the community. For my internship I was
@@ -145,8 +145,8 @@ const InternationalPage = () => {
                             penguins, elephants, hippos, antelope, lions, and
                             many more. We got to learn about the cultural
                             history of South Africa through important
-                            experiences such as visting the Slave Lodge,
-                            speaking with Lionel Davis, visting the township of
+                            experiences such as visiting the Slave Lodge,
+                            speaking with Lionel Davis, visiting the township of
                             Khayelitsha, and seeing the District Six Museum. On
                             our free days, we planned some exciting adventures
                             including paragliding off of Signal Hill, sand

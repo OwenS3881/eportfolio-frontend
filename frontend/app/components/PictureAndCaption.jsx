@@ -2,6 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 import styles from "@/app/styles/International.module.css";
+import Reveal from "@/app/components/Reveal";
 
 const PictureAndCaption = ({ imgSrc, text }) => {
     const defaultText =
@@ -13,12 +14,14 @@ const PictureAndCaption = ({ imgSrc, text }) => {
     if (!text) text = defaultText;
 
     return (
-        <section className={styles.sectionContainer}>
-            <div className={styles.textContainer}>{text}</div>
-            <div className={styles.imageContainer}>
-                <Image src={imgSrc} fill={true} alt="study_abroad_pic" />
-            </div>
-        </section>
+        <Reveal>
+            <section className={styles.sectionContainer}>
+                <div className={styles.textContainer}>{text}</div>
+                <div className={styles.imageContainer}>
+                    <Image src={imgSrc} fill={true} alt="study_abroad_pic" />
+                </div>
+            </section>
+        </Reveal>
     );
 };
 

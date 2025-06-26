@@ -9,30 +9,26 @@ import ProfileSection from "./components/HomePage/ProfileSection";
 import SkillsSection from "./components/HomePage/SkillsSection";
 import ProjectsSection from "./components/HomePage/ProjectsSection";
 import RecentCourses from "./components/HomePage/RecentCourses";
-import RecentJournal from "./components/HomePage/RecentJournal";
 
 //Home Page
 
 const HomePage = () => {
-  return (
-    <div className={styles.container}>
-      <Reveal>
-        <ProfileSection />
-      </Reveal>
-      <Reveal>
-        <SkillsSection />
-      </Reveal>
-      <Reveal>
-        <ProjectsSection />
-      </Reveal>
-      <Reveal>
-        <RecentCourses />
-      </Reveal>
-      <Reveal>
-        <RecentJournal />
-      </Reveal>
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <Reveal>
+                <ProfileSection />
+            </Reveal>
+            <Reveal>
+                <SkillsSection />
+            </Reveal>
+            <Reveal>
+                <ProjectsSection />
+            </Reveal>
+            <Reveal>
+                <RecentCourses />
+            </Reveal>
+        </div>
+    );
 };
 
 export default HomePage;

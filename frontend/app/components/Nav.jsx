@@ -10,7 +10,7 @@ import Link from "next/link";
 //Global Navbar
 
 const Nav = () => {
-    const mobileWidth = 800; //width at which nav switches from desktop -> mobile
+    const mobileWidth = 850; //width at which nav switches from desktop -> mobile
     const [desktop, setDesktop] = useState(true);
     const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -56,11 +56,10 @@ const Nav = () => {
                     </div>
                     <div className={styles.linksContainer}>
                         <Link href={"/projects/"}>Projects</Link>
-                        <Link href={"/coursework/"}>Coursework</Link>
                         <Link href={"/research/"}>Research</Link>
-                        <Link href={"/photos/"}>Photos</Link>
-                        <Link href={"/journal/"}>Journal</Link>
                         <Link href={"/international/"}>Study Abroad</Link>
+                        <Link href={"/photos/"}>Photos</Link>
+                        <Link href={"/coursework/"}>Coursework</Link>
                     </div>
                 </header>
             ) : (
@@ -94,23 +93,20 @@ const Nav = () => {
                             <Link onClick={closeMobile} href={"/projects/"}>
                                 Projects
                             </Link>
-                            <Link onClick={closeMobile} href={"/coursework/"}>
-                                Coursework
-                            </Link>
                             <Link onClick={closeMobile} href={"/research/"}>
                                 Research
-                            </Link>
-                            <Link onClick={closeMobile} href={"/photos/"}>
-                                Photos
-                            </Link>
-                            <Link onClick={closeMobile} href={"/journal/"}>
-                                Journal
                             </Link>
                             <Link
                                 onClick={closeMobile}
                                 href={"/international/"}
                             >
                                 Study Abroad
+                            </Link>
+                            <Link onClick={closeMobile} href={"/photos/"}>
+                                Photos
+                            </Link>
+                            <Link onClick={closeMobile} href={"/coursework/"}>
+                                Coursework
                             </Link>
                         </div>
                     </div>
