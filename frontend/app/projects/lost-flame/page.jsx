@@ -52,7 +52,15 @@ const LostFlamePage = () => {
                             src={"/lost-flame-icon.png"}
                         />
                     </div>
+                    <p className={styles.disclaimer}>
+                        Due to issues with the Google Play Store, Lost Flame may
+                        not currently be avilable on your Android Device, please
+                        check out the iOS version or look at the source code
+                        while this is being fixed. Thank you for your
+                        understanding.
+                    </p>
                 </Reveal>
+
                 <Reveal>
                     <h2>View the Source Code</h2>
                     <div className={styles.codeLinks}>
