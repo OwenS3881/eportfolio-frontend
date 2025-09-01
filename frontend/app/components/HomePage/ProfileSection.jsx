@@ -39,7 +39,7 @@ const ProfileSection = () => {
                     student and I have the goal of becoming a software engineer.
                     In addition to my CS major, I plan to earn a minor in
                     Business Administration and another minor in Statistics. I
-                    am also in UF's Honors Program and Undergraduate Research
+                    am also in UF's Honors Program and University Research
                     Scholars Program (URSP). For more about my research, check
                     out my <Link href={"/research/"}>research</Link> page!
                 </p>
