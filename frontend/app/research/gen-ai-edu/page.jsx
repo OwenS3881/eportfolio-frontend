@@ -38,7 +38,7 @@ const VirutalLearningLabPage = () => {
                         >
                             Dr. Walter Leite
                         </Link>{" "}
-                        in his lab through the Undergraduate Research Scholars
+                        in his lab through the University Research Scholars
                         Program{" "}
                         <Link
                             href={"https://cur.aa.ufl.edu/cure-2/"}

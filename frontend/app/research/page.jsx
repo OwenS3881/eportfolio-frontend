@@ -40,7 +40,7 @@ const ResearchPage = async () => {
                     }
                     target="_blank"
                 >
-                    UF's Undergraduate Research Scholars Program (URSP)
+                    UF's University Research Scholars Program (URSP)
                 </Link>
                 , I have and will continue to have the opportunity to
                 participate in many meaningful research projects across
