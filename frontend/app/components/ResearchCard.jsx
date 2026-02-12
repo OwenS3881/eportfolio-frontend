@@ -39,13 +39,15 @@ const ResearchCard = ({ researchExperience }) => {
                 {startDate} - {endDate}
             </h4>
 
-            <div className={styles.imgContainer}>
-                <Image
-                    src={researchExperience.image}
-                    fill={true}
-                    alt="research-image"
-                />
-            </div>
+            {researchExperience.image && (
+                <div className={styles.imgContainer}>
+                    <Image
+                        src={researchExperience.image}
+                        fill={true}
+                        alt="research-image"
+                    />
+                </div>
+            )}
 
             <p>{researchExperience.description}</p>
 
@@ -68,9 +70,14 @@ const ResearchCard = ({ researchExperience }) => {
                 })}
             </div>
 
-            <Link className={styles.checkLink} href={researchExperience.url}>
-                Check it out!
-            </Link>
+            {researchExperience.url && (
+                <Link
+                    className={styles.checkLink}
+                    href={researchExperience.url}
+                >
+                    Check it out!
+                </Link>
+            )}
         </div>
     );
 };

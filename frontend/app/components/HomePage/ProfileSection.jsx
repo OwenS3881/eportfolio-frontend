@@ -33,15 +33,15 @@ const ProfileSection = () => {
                 </div>
                 <h2>Computer Science Major at the University of Florida.</h2>
                 <p>
-                    Hello, I'm Owen Szymanski and I am a second year student at
-                    the University of Florida in the combined B.S./M.S. program
-                    in Computer Science. I am a very passionate Computer Science
-                    student and I have the goal of becoming a software engineer.
-                    In addition to my CS major, I plan to earn a minor in
-                    Business Administration and another minor in Statistics. I
-                    am also in UF's Honors Program and University Research
-                    Scholars Program (URSP). For more about my research, check
-                    out my <Link href={"/research/"}>research</Link> page!
+                    Hello, I'm Owen Szymanski and I am a student at the
+                    University of Florida in the combined B.S./M.S. program in
+                    Computer Science. I am a passionate Computer Science student
+                    and I have the goal of becoming a software engineer. In
+                    addition to my CS major, I plan to earn a minor in Business
+                    Administration and another minor in Statistics. I am also in
+                    UF's Honors Program and University Research Scholars Program
+                    (URSP). For more about my research, check out my{" "}
+                    <Link href={"/research/"}>research</Link> page!
                 </p>
                 <div className={styles.mobileContact}>
                     <ContactInfo className={styles.contactContainer} />
