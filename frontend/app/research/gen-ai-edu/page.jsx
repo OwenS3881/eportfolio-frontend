@@ -78,7 +78,7 @@ const VirutalLearningLabPage = () => {
                     <p>
                         Below, you can see the FUNLIT team's poster presentation
                         that we delivered at the annual Spring Undergraduate
-                        Research Symposium.
+                        Research Symposium in the Spring of 2025.
                     </p>
                 </div>
             </Reveal>

@@ -14,7 +14,7 @@ async function fetchRecentCourses(currentTerm) {
             next: {
                 revalidate: 1,
             },
-        }
+        },
     );
     const courses = await res.json();
     const filteredCourses = courses.filter((course) => {
@@ -25,7 +25,7 @@ async function fetchRecentCourses(currentTerm) {
 
 //section of home page that displays courses from the most recent term
 const RecentCourses = async () => {
-    const currentTerm = "Fall 2025";
+    const currentTerm = "Spring 2026";
 
     const courses = await fetchRecentCourses(currentTerm);
 
