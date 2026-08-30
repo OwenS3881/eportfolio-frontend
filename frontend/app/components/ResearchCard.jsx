@@ -34,6 +34,7 @@ const ResearchCard = ({ researchExperience }) => {
         <div className={styles.cardContainer}>
             <h1>{researchExperience.title}</h1>
             <h3>{researchExperience.professor}</h3>
+            <h4>{researchExperience.department}</h4>
 
             <h4>
                 {startDate} - {endDate}
